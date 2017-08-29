@@ -1,0 +1,35 @@
+.top-bar {
+  padding: 0rem 1rem;
+  margin-bottom: 1rem;
+}
+
+button.menu-icon {
+  margin-left: 1rem;
+}
+
+
+/*reference https://codepen.io/r_p4rk/pen/EaXrav*/
+
+.page {
+  overflow: auto;
+  border-radius: 20px;
+  background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.65));
+  color: black;
+}
+
+.page::before {
+  background: url("../images/backgroundTable.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+
+footer {
+  background-color: rgb(44, 56, 64);
+  margin-top: 10%;
+}
+
+body {
+  background: url(../images/backgroundTable.jpg) no-repeat center center fixed;
+  background-size: cover;
+}

@@ -1,0 +1,18 @@
+.top-bar {
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  padding: 0rem 1rem;
+  transition: padding 0.25s ease;
+}
+
+.reveal {
+  border-radius: 10px;
+  color: black;
+}
+
+.recipe {
+  margin: 1rem;
+}
