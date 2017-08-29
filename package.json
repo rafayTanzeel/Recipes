@@ -10,6 +10,7 @@
     "gulp-sass": "^2.1.0"
   },
   "scripts": {
+    "postinstall": "bower cache clean && bower install",
     "start": "node server",
     "build": "gulp sass"
   },
