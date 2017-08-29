@@ -33,3 +33,9 @@ body {
   background: url(../images/backgroundTable.jpg) no-repeat center center fixed;
   background-size: cover;
 }
+footer {
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  margin: 0px;
+}
