@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body>
+
+  <nav class="top-bar">
+    <div class="top-bar-title">
+      <strong>Recipes</strong>
+      <span data-responsive-toggle="responsive-menu " data-hide-for="medium">
+          <button class="menu-icon light" type="button" data-toggle></button>
+      </span>
+    </div>
+    <div id="responsive-menu">
+      <div class="top-bar-right">
+        <ul class="dropdown menu medium-horizontal vertical" data-responsive-menu="accordion medium-dropdown">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topPicks.html">Top Picks</a></li>
+          <li class="active"><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="row page">
+      <div class="small-9 small-centered column">
+      <form action="/recipeData" method="post" data-abide novalidate>
+        <h2 class="text-center">CONTACT</h2>
+        <div data-abide-error class="alert callout" style="display: none;">
+          <p><i class="fi-alert"></i> Fill Up All the information in the Form</p>
+        </div>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <label class="text-center">First Name
+              <input type="text" placeholder="First Name" name="fname" required pattern="alpha">
+              <span class="form-error">
+                Please, fill the first name section
+              </span>
+            </label>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <label class="text-center">Last Name
+              <input type="text" placeholder="Last Name" name="lname" required pattern="alpha">
+              <span class="form-error">
+                Please, fill the last name section
+              </span>
+            </label>
+          </div>
+          <div class="small-12 columns">
+            <label class="text-center">Email
+              <input type="email" placeholder="someone@gmail.com" name="email" required pattern="email">
+              <span class="form-error">
+                Please, fill the correct email address
+              </span>
+            </label>
+          </div>
+          <div class="small-12 columns">
+            <label class="text-center">Recipe
+              <textarea placeholder="Recipe and Ingredients" rows="10" cols="100" name="rcpe" required pattern="alpha_numeric"></textarea>
+              <span class="form-error">
+                Need to write some recipe
+              </span>
+            </label>
+          </div>
+      </div>
+      <div class="row">
+        <fieldset class="small-1 small-centered columns">
+          <button class="button" type="submit" value="Submit">Submit</button>
+        </fieldset>
+      </div>
+    </form>
+      </div>
+    </div>
+</section>
+
+<footer class="row expanded">
+  <div class="small-12 column"><em style="font-size:0.8rem;">&#169; Team 16</em></div>
+</footer>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/what-input/dist/what-input.js"></script>
+  <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

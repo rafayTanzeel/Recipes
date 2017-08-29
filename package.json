@@ -1,0 +1,28 @@
+{
+  "name": "rafay-recipe",
+  "version": "1.0.0",
+  "description": "Rafay's Recipe Website",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "start": " gulp",
+    "build": "gulp sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rafayTanzeel/Recipes.git"
+  },
+  "author": "Rafay Tanzeel <rafaytanzeel@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.15.3",
+    "gulp-autoprefixer": "^3.1.0",
+    "winston": "^2.3.1"
+  }
+}
