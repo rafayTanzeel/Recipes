@@ -1,9 +1,17 @@
 const express = require('express');
 const winston = require('winston');
+const bodyParser = require('body-parser');
+const helmet = require('helmet');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
+
+app.use(helmet());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: false, // body only accept string or array
+}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
@@ -37,3 +45,9 @@ app.get('/topPicks', (req, res) =>{
     title: 'Top Recipes',
   });
 });
+
+app.post('/recipeData', (req, res) =>{
+  console.log(req.body);
+  res.redirect('/');
+});
+
