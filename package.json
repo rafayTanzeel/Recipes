@@ -25,6 +25,7 @@
     "bower": "^1.8.0",
     "express": "^4.15.3",
     "gulp-autoprefixer": "^3.1.0",
+    "pug": "^2.0.0-rc.3",
     "winston": "^2.3.1"
   }
 }

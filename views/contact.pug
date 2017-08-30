@@ -1,0 +1,54 @@
+extends placeholders/header.pug
+
+block content
+  nav.top-bar
+    .top-bar-title
+      strong Recipes
+      span(data-responsive-toggle='responsive-menu ', data-hide-for='medium')
+        button.menu-icon.light(type='button', data-toggle='')
+    #responsive-menu
+      .top-bar-right
+        ul.dropdown.menu.medium-horizontal.vertical(data-responsive-menu='accordion medium-dropdown')
+          li
+            a(href='/') Home
+          li
+            a(href='/topPicks') Top Picks
+          li.active
+            a(href='#') Contact Us
+  section
+    .row.page
+      .small-9.small-centered.column
+        form(action='/recipeData', method='post', data-abide='', novalidate='')
+          h2.text-center CONTACT
+          .alert.callout(data-abide-error='', style='display: none;')
+            p
+              i.fi-alert
+              |  Fill Up All the information in the Form
+          .row
+            .small-12.medium-6.columns
+              label.text-center
+                | First Name
+                input(type='text', placeholder='First Name', name='fname', required='', pattern='alpha')
+                span.form-error
+                  | Please, fill the first name section
+            .small-12.medium-6.columns
+              label.text-center
+                | Last Name
+                input(type='text', placeholder='Last Name', name='lname', required='', pattern='alpha')
+                span.form-error
+                  | Please, fill the last name section
+            .small-12.columns
+              label.text-center
+                | Email
+                input(type='email', placeholder='someone@gmail.com', name='email', required='', pattern='email')
+                span.form-error
+                  | Please, fill the correct email address
+            .small-12.columns
+              label.text-center
+                | Recipe
+                textarea(placeholder='Recipe and Ingredients', rows='10', cols='100', name='rcpe', required='', pattern='alpha_numeric')
+                span.form-error
+                  | Need to write some recipe
+          .row
+            fieldset.small-1.small-centered.columns
+              button.button(type='submit', value='Submit') Submit

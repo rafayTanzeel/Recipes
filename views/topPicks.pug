@@ -1,0 +1,69 @@
+extends placeholders/header.pug
+
+block content
+  nav.top-bar
+    .top-bar-title
+      strong Recipes
+      span(data-responsive-toggle='responsive-menu ', data-hide-for='medium')
+        button.menu-icon.light(type='button', data-toggle='')
+    #responsive-menu
+      .top-bar-right
+        ul.dropdown.menu.medium-horizontal.vertical(data-responsive-menu='accordion medium-dropdown')
+          li
+            a(href='/') Home
+          li.active
+            a(href='#') Top Picks
+          li
+            a(href='/contact') Contact Us
+  section#content
+    .row.page
+      .small-9.small-centered.column
+        h2.text-center Top 3 Picks
+        .row.small-up-1
+          .column.column-block
+            h3
+              em First Place
+            img.thumbnail(src='images/topfood1.jpg', alt='')
+            .recipe
+              p.lead Salmon with White Wine Butter Sauce
+              ol
+                li Preheat oven to 450°F. 
+                li Arrange salmon, skin side down, in a lightly oiled baking pan. 
+                li Brush salmon with olive oil and season to taste with salt and pepper. 
+                li
+                  | Bake until salmon is no longer translucent but is still moist looking in center (cut to test), about 15 minutes.
+                li Meanwhile, combine wine and broth in a 10 to 12-inch frying pan.
+                li Bring to a boil over high heat. 
+                li Boil until reduced to 2-3 tablespoons, about 5 minutes. 
+                li
+                  | Whisk butter into pan, a few chunks at a time, until sauce is smooth and thickened slightly.
+                li Stir in tarragon. Remove sauce from heat but keep warm.
+                li
+                  | When salmon is done, slide a spatula between skin and meat of each fillet;transfer salmon to individual plates, leaving skin in pan.
+                li Drizzle salmon with equal amounts of butter sauce and serve immediately
+          .column.column-block
+            h3
+              em Second Place
+            img.thumbnail(src='images/topfood2.jpg', alt='')
+            .recipe
+              p.lead Roast Pork Tenderloin with Plum Chutney and Butternut Squash
+              ol
+                li
+                  | Preheat oven to 425°F (220°C). In saucepan, combine plums, brown sugar, vinegar, ginger, star anise, clove and cinnamon stick. Bring to a boil, then reduce to a simmer 30 min., or until thick and syrupy. Discard star anise, clove and cinnamon stick. Set plum chutney aside, keep warm.
+                li
+                  | In large bowl, mix butternut squash with 2 tbsp (30 mL) oil, 1 tsp (5 mL) salt and 1/2 tsp (2 mL) pepper to coat. Arrange in single layer on parchment-lined baking sheet. Roast squash 30 to 35 min., turning halfway, until golden brown and tender.
+                li
+                  | Meanwhile, season tenderloins with remaining salt and pepper. Heat remaining oil in large non-stick skillet over medium-high heat. Brown tenderloins on all sides, 4 to 6 min. Place on parchment-lined baking sheet. Cook in the preheated oven 15 to 17 min., or until an instant-read thermometer registers 160°F (71°C) when inserted into the thickest portion of the meat. Let stand 10 min. before slicing.
+                li Served pork with plum chutney and roasted butternut squash on side.
+          .column.column-block
+            h3
+              em Third Place
+            img.thumbnail(src='images/topfood3.jpg', alt='')
+            .recipe
+              p.lead Fish Tacos with Pico de Gallo
+              ol
+                li
+                  | In large bowl, whisk together lime juice, aioli, olive oil, salt and pepper. Add coleslaw; toss to coat. In separate bowl, combine cucumber, tomato and green onion. Set aside.
+                li Cook fish according to Seafood Steamer bag instructions.
+                li
+                  | Meanwhile, set aside 2 cups (500 mL) of coleslaw mixture to serve alongside tacos or at another time. Divide remaining coleslaw mixture (⅓-cup/75-mL portions) onto tortilla wraps. Drain and discard juices from Seafood Steamer bags; divide cooked fish on top of coleslaw. Sprinkle on cucumber mixture. Top with cilantro sprigs or microgreens. Garnish with additional aioli, if desired. Fold over tortilla wraps to serve.
