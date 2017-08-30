@@ -1,0 +1,13 @@
+mixin recipe-ingredient(id, imgName, title, items)
+    .column.column-block
+        div(data-open= id)
+            img.thumbnail(src='images/food11.jpg', alt='')
+        .reveal(id= id, data-close-on-click='true', data-reveal='', data-animation-in='scale-in-up', data-animation-out='scale-out-down')
+            img(src='images/'+imgName, alt='Image not found')
+            .recipe
+                p.lead= title
+                ol
+                  for item in items
+                    li= item
+            button.close-button(data-close='', aria-label='Close reveal', type='button')
+                span(aria-hidden='true') ×
